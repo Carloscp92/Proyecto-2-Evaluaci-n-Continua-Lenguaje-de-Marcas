@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE plataforma SYSTEM "plataforma.dtd">-->
+
+<plataforma fecha_publicacion="2025" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="plataforma.xsd">
+  <cursos>
+    <curso id="id" codigo="01">
+      <titulo>Introducción a la Programación en Java</titulo>
+      <nivel>Básico</nivel>
+      <modalidad>Online</modalidad>
+      <horas>120</horas>
+      <modulos>
+        <modulo clave="M1">
+          <nombre>Fundamentos de Java</nombre>
+          <horas>30</horas>
+        </modulo>
+      </modulos>
+    </curso>
+  </cursos>
+
+  <alumnos>
+    <alumno id="a" nif="12345678Z">
+      <nombre>Carlos Pérez</nombre>
+      <email>carlos.perez@example.com</email>
+      <telefono>600123456</telefono>
+    </alumno>
+  </alumnos>
+
+  <matriculas>
+    <matricula id="a1" alumnoRef="a" cursoRef="id">
+      <fecha_alta>2025-03-01</fecha_alta>
+      <estado>Activa</estado>
+    </matricula>
+  </matriculas>
+
+  <evaluaciones>
+    <evaluacion id="q" matriculaRef="a1">
+      <instrumento>Examen final</instrumento>
+      <convocatoria>Ordinaria</convocatoria>
+      <nota>8.5</nota>
+    </evaluacion>
+  </evaluaciones>
+</plataforma>
